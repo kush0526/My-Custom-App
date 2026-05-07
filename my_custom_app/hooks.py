@@ -5,6 +5,12 @@ app_description = "My custom frappe app"
 app_email = "kushsharma26072003@gmail.com"
 app_license = "mit"
 
+
+doc_events = {
+    "Lead": {
+        "before_save": "my_custom_app.lead_custom.set_lead_title"
+    }
+}
 # Apps
 # ------------------
 
